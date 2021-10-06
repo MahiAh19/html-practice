@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style> 
+            div.box-container{
+                background-color: rgb(3, 13, 31);
+                width: 400px;
+                padding: 30px;
+                display: flex;
+                flex-direction: row;
+            }
+
+            div.box{
+                width: 150px;
+                height: 150px;
+                background-color: lightblue;
+                margin: 5px;
+                color: white;
+                padding: 20px;
+                text-align: centre;
+                font-size: 20px;
+            }
+
+            @media (min-width: 992px){
+                div.boxcontainer{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            @media (max-width: 992px){
+                div.boxcontainer{
+                    display: block;
+                    justify-content: space-between;
+                }
+            }
+
+           
+        </style>
+         
+    </head>
+
+    <body>
+
+        <div class="box-container">
+
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            
+        </div>
+    </body>
+</html>
